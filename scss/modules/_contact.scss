@@ -12,10 +12,34 @@
     left: 50%;
     transform: translateX(-50%);
   }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__item {
+    padding-bottom: 45px;
+    display: flex;
+    font-size: 18px;
+  }
+
+  &__item:last-child {
+    padding-bottom: 0;
+  }
+
+  &__item > svg {
+    @include size(16px);
+    margin-right: 10px;
+    fill: $violet;
+  }
 }
 
 .row {
   padding: 40px 50px;
+  position: relative;
 }
 
 .form {
@@ -27,29 +51,36 @@
     @include size(310px, 50px);
     font-size: 18px;
     color: $main;
-    font-family: GothamBook, sans-serif;
-    padding-left: 5px;
-    border-bottom: solid 1px $text;
-    opacity: 0.5;
+    // font-family: GothamBook, sans-serif;
+    border-bottom: solid 1px #4b556275;
     margin-bottom: 20px;
+    padding-left: 10px;
+
   }
 
   &__input::placeholder {
+    opacity: 0.5;
     font-size: 18px;
     text-align: left;
     color: $text;
     font-family: GothamBook, sans-serif;
-    padding-left: 5px;
   }
 
   &__input:active, &__input:focus {
     border-bottom: solid 1px $main;
+    color: $main;
   }
 
   &__button {
     background: none;
     border: 1px solid $main;
     @include size(140px, 50px);
-    @include pos($r: 7px, $b: -60px);
+    @include pos($r: 0px, $b: 0);
+    cursor: pointer;
+  }
+
+  &__button:hover {
+    color: $violet;
+    border-color:$violet;
   }
 }

@@ -19,6 +19,7 @@ html {
 body, html {
 	min-height: 100%;
 	width: 100%;
+	font-family: GotamBook, sans-serif;
 }
 
 .clear::after, .clear::before {
@@ -40,7 +41,14 @@ body, html {
 @font-face {
 	font-family: "Gotham";
 	src: url(../../fonts/gothambold/gothambold1.ttf);
-	font-weight: bold;
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Gotham";
+	src: url(../../fonts/GothamLight.ttf);
+	font-weight: 300;
 	font-style: normal;
 }
 
