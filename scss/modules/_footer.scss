@@ -1,0 +1,53 @@
+.footer {
+  position: relative;
+  @include size(100%, 520px);
+  background: url(../images/footer.png) no-repeat top center, linear-gradient(90deg, rgba(85,182,254,1)  0%,  rgba(124,91,248, 1) 100%);
+  background-size: cover;
+  color: $white;
+
+  &__content {
+    width: 770px;
+    @include pos($t: 50%, $l: 50%);
+    transform: translateX(-50%) translateY(-50%);
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo > img {
+    @include size(250px, 50px);
+    
+  }
+
+  &__info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 40px;
+    font-family: GothamBook, sans-serif;
+  }
+
+  &__copyright {
+    margin-right: 40px;
+    position: relative;
+  }
+
+  &__copyright:after {
+    content: '';
+    width: 0.8px;
+    height: 20px;
+    background: $white;
+    @include pos($r: -20px);
+  }
+}
+
+// .footer__content .container {
+//   width: 770px;
+//   // display: flex;
+//   // flex-direction: column;
+//   // justify-content: space-between;
+//   // align-items: center;
+// }

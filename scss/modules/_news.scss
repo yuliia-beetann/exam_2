@@ -1,0 +1,148 @@
+.news {
+  @include size(100%, 1000px);
+  position: relative;
+  background: url(../images/news.png) no-repeat top center, linear-gradient(90deg, rgba(85,182,254,1)  0%,  #4585d6 100%);
+  background-size: cover;
+  padding: 180px 0;
+  color: $white;
+
+  &__content {
+    color: $main;
+    // display: flex;
+    // justify-content: space-between;
+    margin: 100px 0 140px;
+    width: 100%;
+  }
+
+  &__block {
+    @include size(370px, 520px);
+    background: $white;
+    padding: 0;
+    margin: 0 10px;
+    position: relative;
+  }
+
+  &__img {
+    @include size(100%, 240px);
+  }
+
+  &__title {
+    font-family: Gotham, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 30px;
+    padding: 20px;
+  }
+
+  &__info {
+    font-family: GothamBook, sans-serif;
+    font-size: 18px;
+    color: $text;
+    padding: 0 20px;
+  }
+
+  &__author {
+    padding: 40px 20px 25px;
+  }
+}
+
+.author {
+  @include pos($b: 0, $l: 0);
+  display: flex;
+  justify-content: flex-start;
+
+  &__photo {
+    @include size(60px);
+    border-radius: 50%;
+  }
+
+  &__info {
+    padding-left: 20px;
+    font-family: Gotham, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  &__name {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $text;
+  }
+
+  &__date {
+    font-size: 14px;
+    color: $hover;
+  }
+}
+
+.slick-arrow {
+  @include size(25px);
+  // font-size: 10px;
+  text-align: center;
+  border: 1px solid $white;
+  border-radius: 50%;
+}
+
+.slick-prev
+{
+    left: -50px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -50px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '<';
+    font-size: 10px;
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '>';
+    font-size: 10px;
+}
+
+.slick-next
+{
+    right: -50px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -50px;
+}
+.slick-next:before
+{
+    content: '>';
+    font-size: 10px;
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '<';
+    font-size: 10px;
+}
+
+.slick-dots li {
+	width: 50px; 
+}
+
+.slick-dots {
+	bottom: -60px;
+}
+
+.slick-dots li button:before {
+  @include size(10px);
+	background: none;
+  border: 1px solid $white;
+  border-radius: 50%;
+	content: '';
+	transition: .5s;
+}
+
+.slick-dots li.slick-active button:before {
+	background: $white;
+	transform: rotate(90deg);
+}

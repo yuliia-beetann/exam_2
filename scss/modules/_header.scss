@@ -1,0 +1,133 @@
+header {
+  @include size(100%, 100vh);
+  background: url(../images/header.png) no-repeat top center, linear-gradient(90deg, rgba(85,182,254,1)  0%,  rgba(124,91,248, 1) 100%);
+  background-size: cover;
+  color: $white;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+
+  &__logo > img {
+    @include size(250px, 50px);
+  }
+
+  
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &__item:active .circle {
+    background: $white;
+  }
+
+  &__item {
+    padding: 10px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .circle {
+    width: 5px;
+    height: 5px;
+    margin: 0 10px;
+    border: $white solid 1px;
+    border-radius: 50%;
+  }
+}
+
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    @include size(35px);
+    margin: 0 15px;
+    border: 1px $white solid;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__logo > img {
+    @include size(20px);
+    fill: $white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    // padding-top: 5px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  width: 100%;
+
+  &__slogan1 {
+    font-size: 80px;
+    font-weight: 700;
+    padding-bottom: 40px;
+  }
+
+  &__slogan2 {
+    font-size: 18px;
+    font-weight: lighter;
+  }
+}
+
+.scroll {
+  @include pos($b: 10%, $l: 50%);
+  transform: translateX(-50%);
+  text-align: center;
+  color: #fff;
+  animation: scroll 2s ease-in-out infinite;
+  cursor: pointer;
+
+  @media (max-width: $mobile) {
+      display: none;
+  }
+
+  &__arrow {
+    border: 1px $white solid;
+    border-radius: 50%;
+  }
+
+  &__arrow > svg {
+      fill: $white;
+  }
+}
+
+@keyframes scroll {
+  0% {
+  bottom: 10%;
+  }
+  50% {
+  bottom: 13%;
+  }
+  100% {
+  bottom: 10%;
+  }
+}

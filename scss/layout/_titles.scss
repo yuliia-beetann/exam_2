@@ -1,0 +1,17 @@
+.title {
+  font-size: 44px;
+  color: inherit;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-family: Gotham, sans-serif;
+}
+
+.title::before {
+  content: '';
+  @include size(100px, 1px);
+  background-color: currentColor;
+  @include pos($t: -40px, $l: 50%);
+  transform: translateX(-50%);
+}
