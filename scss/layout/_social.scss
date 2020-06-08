@@ -1,0 +1,28 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    @include size(35px);
+    margin: 0 15px;
+    border: 1px $white solid;
+    border-radius: 50px;
+    text-align: center;
+    position: relative;
+
+    &:hover, &:active {
+      border: 1.5px $white solid;
+    }
+  }
+
+  &__logo svg {
+    @include size(20px);
+    fill: $white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    // padding-top: 5px;
+  }
+}

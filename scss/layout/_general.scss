@@ -19,7 +19,10 @@ html {
 body, html {
 	min-height: 100%;
 	width: 100%;
-	font-family: GotamBook, sans-serif;
+	font-family: Gotam, sans-serif;
+	color: $main;
+	background: $white;
+	overflow-x: hidden;
 }
 
 .clear::after, .clear::before {

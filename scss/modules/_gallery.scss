@@ -1,0 +1,44 @@
+.gallery {
+  &__title {
+    margin: 180px auto 100px;
+  }
+
+  &__pictures {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 500px;
+  }
+
+  &__img {
+    width: 25%;
+
+    & > img {
+      height: 49%;
+    }
+
+    & > img:first-child {
+      padding-bottom: 2%;
+    }
+  }
+
+  &__img:first-child {
+    width: 48%;
+    height: 100%;
+
+    & >img {
+      height: 100%;
+    }
+
+    & > img:first-child {
+      padding-bottom: 1%;
+    }
+  }
+
+  &__button {
+    margin: 60px auto 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

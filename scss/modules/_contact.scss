@@ -72,11 +72,8 @@
   }
 
   &__button {
-    background: none;
-    border: 1px solid $main;
-    @include size(140px, 50px);
+    width: 140px;
     @include pos($r: 0px, $b: 0);
-    cursor: pointer;
   }
 
   &__button:hover {

@@ -1,0 +1,86 @@
+.about {
+  &__main_title {
+    margin: 140px 0 100px;
+  }
+
+  &__block {
+    margin-bottom: 100px;
+    padding: 0;
+  }
+
+  &__img {
+    padding-right: 30px;
+    position: relative;
+    z-index: 99;
+  }
+
+  &__img::after {
+    content: '';
+    @include size(100%);
+    z-index: -1;
+    @include pos($t: -70px, $l: -215px);
+    background-color: $hover;
+  }
+
+  &__block--right {
+    flex-direction: row-reverse;
+
+    & > .about__img {
+      padding-right: 0px;
+      padding-left: 30px;
+    }
+
+    & > .about__img::after {
+      @include pos($t: -70px, $l: 220px);
+      background-color: $violet;
+    }
+
+    &  .about__title {
+      font-size: 36px;
+    }
+  }
+
+  &__small_title {
+    font-family: GothamBook, sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    padding: 50px 0 10px;
+  }
+
+  &__title {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  &__title::before {
+    width: 0;
+  }
+
+  &__text {
+    color: $text;
+    padding: 35px 0;
+    line-height: 1.67;
+  }
+
+  &__location {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 60px;
+    font-style: italic;
+  }
+
+  &__location > svg {
+    @include size(16px);
+    margin-right: 10px;
+    fill: $violet;
+  }
+}
+
+// .about__block .row {
+//   padding: 0;
+// }
+
+// .row {
+//   padding: 0;
+// }

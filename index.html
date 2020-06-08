@@ -9,8 +9,8 @@
 	<title>Monticello</title>
 
 	<link rel="icon" href="images/favicon.png">
-	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/slick-theme.css">
 	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/styles.css">
@@ -44,13 +44,19 @@
 				</ul>
 				<div class="menu__social social">
 					<div class="social__logo">
-						<img src="images/icons/facebook.svg" alt="facebook">
+						<a href="#">
+							<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-9" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path fill="inherite" d="M215.8 85H264V3.6C255.7 2.5 227.1 0 193.8 0 124.3 0 76.7 42.4 76.7 120.3V192H0v91h76.7v229h94V283h73.6l11.7-91h-85.3v-62.7c0-26.3 7.3-44.3 45.1-44.3z"></path></svg>
+						</a>
 					</div>
 					<div class="social__logo">
-						<img src="images/icons/twitter.svg" alt="twitter">
+						<a href="#">
+							<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+						</a>
 					</div>
 					<div class="social__logo">
-						<img src="images/icons/instagram.svg" alt="instagram">
+						<a href="#">
+							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="inherite" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -73,39 +79,49 @@
 	</header>
 
 	<!-- ------ABOUT------ -->
-	<!-- <div class="about" id="#about">
+	<div class="about" id="about">
 		<div class="container">
 
-			<h2 class="about__main_title title"></h2>
+			<h2 class="about__main_title title">what we do</h2>
 
-			<div class="about__block about__block--right">
-				<div class="about__img">
-					<img src="#" alt="">
+			<div class="about__block about__block row">
+				<div class="about__img col-7">
+					<img src="images/project1.png" alt="project1">
 				</div>
-				<div class="about__info">
-					<h3 class="about__small_title small_title"></h3>
-					<h2 class="about__title title"></h2>
-					<p class="about__text"></p>
+				<div class="about__info col-5">
+					<h3 class="about__small_title small_title">One World</h3>
+					<h2 class="about__title title">Trade Center</h2>
+					<p class="about__text">Increasing prosperity in our lives can be accomplished by having the right frame of mind. 
+						The truth is, our thoughts are very powerful.</p>
 					<button class="about__button button">More details</button>
-					<div class="about__location"></div>
+					<div class="about__location">
+						<svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m407.579 87.677c-31.073-53.624-86.265-86.385-147.64-87.637-2.62-.054-5.257-.054-7.878 0-61.374 1.252-116.566 34.013-147.64 87.637-31.762 54.812-32.631 120.652-2.325 176.123l126.963 232.387c.057.103.114.206.173.308 5.586 9.709 15.593 15.505 26.77 15.505 11.176 0 21.183-5.797 26.768-15.505.059-.102.116-.205.173-.308l126.963-232.387c30.304-55.471 29.435-121.311-2.327-176.123zm-151.579 144.323c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.298 72-72 72z"/></g></svg>
+						<p>New York City, United States - 1776 feet</p>
+					</div>
 				</div>
 			</div>
 
-			<div class="about__block about__block--left">
-				<div class="about__img">
-					<img src="#" alt="">
+			<div class="about__block about__block--right row">
+
+				<div class="about__img about__img--right col-7">
+					<img src="images/project2.png" alt="project2">
 				</div>
-				<div class="about__info">
-					<h3 class="about__small_title small_title"></h3>
-					<h2 class="about__title title"></h2>
-					<p class="about__text"></p>
+
+				<div class="about__info col-5">
+					<h3 class="about__small_title small_title">International</h3>
+					<h2 class="about__title title">Commerce Centre</h2>
+					<p class="about__text">Successful businesses have many things in common, today we’ll look at the big ‘R’ of recognition and how a digital advertising network may help.</p>
 					<button class="about__button button">More details</button>
-					<div class="about__location"></div>
+					<div class="about__location">
+						<svg enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><g><path d="m407.579 87.677c-31.073-53.624-86.265-86.385-147.64-87.637-2.62-.054-5.257-.054-7.878 0-61.374 1.252-116.566 34.013-147.64 87.637-31.762 54.812-32.631 120.652-2.325 176.123l126.963 232.387c.057.103.114.206.173.308 5.586 9.709 15.593 15.505 26.77 15.505 11.176 0 21.183-5.797 26.768-15.505.059-.102.116-.205.173-.308l126.963-232.387c30.304-55.471 29.435-121.311-2.327-176.123zm-151.579 144.323c-39.701 0-72-32.299-72-72s32.299-72 72-72 72 32.299 72 72-32.298 72-72 72z"/></g></svg>
+						<p>Hong Kong - 1588 Feet</p>
+					</div>
 				</div>
+
 			</div>
 
 		</div>
-	</div> -->
+	</div>
 
 
 	<!-- ------NEWS------ -->
@@ -124,7 +140,7 @@
 						<div class="author__photo"><img src="images//author1.png" alt=""></div>
 						<div class="author__info">
 							<div class="author__name">isaak dunn</div>
-							<div class="athor__date">09 Feb 2017</div>
+							<div class="author__date">09 Feb 2017</div>
 						</div>
 					</div>
 				</div>
@@ -138,7 +154,7 @@
 						<div class="author__photo"><img src="images/author2.png" alt=""></div>
 						<div class="author__info">
 							<div class="author__name">Dominic Freeman</div>
-							<div class="athor__date">24 Apr 2017</div>
+							<div class="author__date">24 Apr 2017</div>
 						</div>
 					</div>
 				</div>
@@ -151,7 +167,7 @@
 						<div class="author__photo"><img src="images/author3.png" alt=""></div>
 						<div class="author__info">
 							<div class="author__name">Alice Ward</div>
-							<div class="athor__date">30 Dec 2017</div>
+							<div class="author__date">30 Dec 2017</div>
 						</div>
 					</div>
 				</div>
@@ -164,7 +180,7 @@
 						<div class="author__photo"><img src="images//author1.png" alt=""></div>
 						<div class="author__info">
 							<div class="author__name">isaak dunn</div>
-							<div class="athor__date">09 Feb 2017</div>
+							<div class="author__date">09 Feb 2017</div>
 						</div>
 					</div>
 				</div>
@@ -178,7 +194,7 @@
 						<div class="author__photo"><img src="images/author2.png" alt=""></div>
 						<div class="author__info">
 							<div class="author__name">Dominic Freeman</div>
-							<div class="athor__date">24 Apr 2017</div>
+							<div class="author__date">24 Apr 2017</div>
 						</div>
 					</div>
 				</div>
@@ -190,12 +206,23 @@
 
 
 	<!-- ------GALLERY------ -->
-	<!-- <div class="gallery" id="gallery">
+	<div class="gallery" id="gallery">
 		<div class="container">
-			<div class="gallery__pictures"></div>
-			<gallery__button class="button"></gallery__button>
+			<h2 class="gallery__title title">Gallery</h2>
+			<div class="gallery__pictures">
+				<div class="gallery__img"><img src="images/gallery1.png" alt="photo1"></div>
+				<div class="gallery__img">
+					<img src="images/gallery2.png" alt="photo2">
+					<img src="images/gallery3.png" alt="photo3">
+				</div>
+				<div class="gallery__img">
+					<img src="images/gallery4.png" alt="photo4">
+					<img src="images/gallery5.png" alt="photo5">
+				</div>
+			</div>
+			<button class="gallery__button button">See more</button>
 		</div>
-	</div> -->
+	</div>
 
 
 	<!-- ------MAP------ -->
@@ -268,13 +295,19 @@
 					</div>
 					<div class="footer__social social">
 						<div class="social__logo">
-							<img src="images/icons/facebook.svg" alt="facebook">
+							<a href="#">
+								<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-f" class="svg-inline--fa fa-facebook-f fa-w-9" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 264 512"><path fill="inherite" d="M215.8 85H264V3.6C255.7 2.5 227.1 0 193.8 0 124.3 0 76.7 42.4 76.7 120.3V192H0v91h76.7v229h94V283h73.6l11.7-91h-85.3v-62.7c0-26.3 7.3-44.3 45.1-44.3z"></path></svg>
+							</a>
 						</div>
 						<div class="social__logo">
-							<img src="images/icons/twitter.svg" alt="twitter">
+							<a href="#">
+								<svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+							</a>
 						</div>
 						<div class="social__logo">
-							<img src="images/icons/instagram.svg" alt="instagram">
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="inherite" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+							</a>
 						</div>
 					</div>
 				</div>
