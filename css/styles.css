@@ -198,8 +198,8 @@ body, html {
 header {
   width: 100%;
   height: 100vh;
-  background: url(../images/header.png) no-repeat top center, -webkit-gradient(linear, left top, right top, from(#55b6fe), to(#7c5bf8));
-  background: url(../images/header.png) no-repeat top center, linear-gradient(90deg, #55b6fe 0%, #7c5bf8 100%);
+  background: url(../images/header.png) no-repeat top center, -webkit-gradient(linear, left top, right top, from(#55b7ff), to(#7e5aff));
+  background: url(../images/header.png) no-repeat top center, linear-gradient(90deg, #55b7ff 0%, #7e5aff 100%);
   background-size: cover;
   color: #fff;
   text-transform: uppercase;
@@ -455,8 +455,8 @@ header {
   width: 100%;
   height: 1000px;
   position: relative;
-  background: url(../images/news.png) no-repeat top center, -webkit-gradient(linear, left top, right top, from(#55b6fe), to(#4585d6));
-  background: url(../images/news.png) no-repeat top center, linear-gradient(90deg, #55b6fe 0%, #4585d6 100%);
+  background: url(../images/news.png) no-repeat top center, -webkit-gradient(linear, left top, right top, from(#3c7fd4), to(#24ccfa));
+  background: url(../images/news.png) no-repeat top center, linear-gradient(90deg, #3c7fd4 0%, #24ccfa 100%);
   background-size: cover;
   padding: 180px 0;
 }
@@ -654,17 +654,33 @@ header {
   padding-bottom: 2%;
 }
 
-.gallery__img:first-child {
+.gallery__main_img {
   width: 48%;
   height: 100%;
+  position: relative;
+  z-index: 1;
 }
 
-.gallery__img:first-child > img {
+.gallery__main_img > img {
   height: 100%;
 }
 
-.gallery__img:first-child > img:first-child {
+.gallery__main_img > img:first-child {
   padding-bottom: 1%;
+}
+
+.gallery__main_img::before {
+  content: '';
+  background: url(../images/360.png) no-repeat center center;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 99;
 }
 
 .gallery__button {
@@ -822,8 +838,8 @@ header {
   position: relative;
   width: 100%;
   height: 520px;
-  background: url(../images/footer.png) no-repeat top center, -webkit-gradient(linear, left top, right top, from(#55b6fe), to(#7c5bf8));
-  background: url(../images/footer.png) no-repeat top center, linear-gradient(90deg, #55b6fe 0%, #7c5bf8 100%);
+  background: url(../images/footer.png) no-repeat top center, -webkit-gradient(linear, left top, right top, from(#55b7ff), to(#7e5aff));
+  background: url(../images/footer.png) no-repeat top center, linear-gradient(90deg, #55b7ff 0%, #7e5aff 100%);
   background-size: cover;
   color: #fff;
 }

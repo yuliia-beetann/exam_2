@@ -22,16 +22,28 @@
     }
   }
 
-  &__img:first-child {
+  &__main_img {
     width: 48%;
     height: 100%;
+    position: relative;
+    z-index: 1;
 
-    & >img {
+    & > img {
       height: 100%;
     }
 
     & > img:first-child {
       padding-bottom: 1%;
+    }
+
+    &::before {
+      content: '';
+      background: url(../images/360.png) no-repeat center center;
+      background-size: cover;
+      @include size(80px);
+      @include pos($t: 50%, $l: 50%);
+      transform: translate(-50%, -50%);
+      z-index: 99;
     }
   }
 
